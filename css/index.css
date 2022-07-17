@@ -1,4 +1,23 @@
-.formTimNgay{
+
+/* BT1 */
+.flex{
+    padding:0 auto;
+    margin: 0;
     display: flex;
     justify-content: center;
+}
+.btnDay{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.txtDay{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    width: 100%;
 }

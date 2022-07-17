@@ -1,44 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
-</head>
-<body>
-      <!-- BT1  -->
-      <h1>BT1</h1>
-      <div class="container w-50 card text-center py-3">
-        <div>Tính ngày hôm trước và ngày hôm sau</div>
-        <form class="formTimNgay py-3" >
-            <div >
-                <label for="day">Nhập ngày</label>
-                <input id="day" type="number">
+  </head>
+  <body>
+    <!-- BT5  -->
+    <h1>BT5</h1>
+    <div class="container w-50 card text-center py-3">
+      <div>
+        <h3>Tính ngày hôm trước và ngày hôm sau</h3>
+      </div>
+      <form class="flex py-3">
+        <div>
+          <label for="day">Nhập ngày</label>
+          <input id="day" type="number" />
+          <label id="errorDay"></label>
+        </div>
+        <div>
+          <label for="month">Nhập tháng</label>
+          <input id="month" type="number" />
+        </div>
+        <div>
+          <label for="year">Nhập năm</label>
+          <input id="year" type="number" />
+        </div>
+      </form>
+      <div class="btnDay">
+        <button id="btnBeforeDay" class="btn btn-success">
+          ngày hôm trước
+        </button>
+        <button id="btnAfterDay" class="btn btn-success">ngày hôm say</button>
+      </div>
+      <div class="txtDay">
+        <div class="py-3">
+          <span id="txtDay" ></span>
+        </div>
+      </div>
+    </div>
+    <!-- BT6 -->
+    <h1>BT6</h1>
+    <div class="container w-50 card text-center py-3">
+        <div>
+            <h3>Tính ngày</h3>
+        </div>
+        <form class="flex py-3">
+            <div>
+                <label for="month2">Nhập tháng</label>
+                <input id="month2" type="number">
             </div>
-            <div >
-                <label for="month">Nhập tháng</label>
-                <input id="month" type="number">
-            </div>
-            <div >
-                <label for="year">Nhập năm</label>
-                <input id="year" type="number">
+            <div>
+                <label for="year2">Nhập năm</label>
+                <input id="year2" type="number">
             </div>
         </form>
-        <button>ngayhomsau </button>
+        <button id="btnTinhNgay" class="btn btn-success">Tính Ngày</button>
+        <div class="py-3">
+            <span id="txtTinhNgay"></span>
+        </div>
     </div>
-        
 
-<!-- BS5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- js -->
- <script src="./js/main.js"></script>
-</body>
+    <!-- BT7 -->
+    <h1>BT7</h1>
+    <div class="container w-50 card text-center py-3">
+        <div>
+            <h3>Đọc số có 3 chữ số</h3>
+        </div>
+        <form class="py-3">
+            <label for="so3ChuSo">Nhập số có 3 chữ số</label>
+            <input id="so3ChuSo" type="number">
+        </form>
+        <button id="btnDocSo" class="btn btn-success">Đọc số</button>
+        <div class="py-3">
+            <span id="txtDocSo"></span>
+        </div>
+    </div>
+
+    <!-- BT8 -->
+    <h1>BT8</h1>
+    <div class="container w-50 card text-center py-3">
+        <div>
+            <h3>Tìm sinh viên xa trường nhất</h3> 
+        </div>
+        <form class="py-3">
+            <h4 class="py-3">Sinh Viên 1</h4>
+            <div class="flex">
+                <input id="name1" type="text" placeholder="Nhập tên"> 
+                <input id="x1" type="Number" placeholder="Nhập tọa độ x">
+                <input id="y1" type="Number" placeholder="Nhập tọa độ y">
+            </div>
+            <h4 class="py-3">Sinh Viên 2</h4>
+            <div class="flex">
+                <input id="name2" type="text" placeholder="Nhập tên"> 
+                <input id="x2" type="Number" placeholder="Nhập tọa độ x">
+                <input id="y2" type="Number" placeholder="Nhập tọa độ y">
+            </div>
+            <h4 class="py-3">Sinh Viên 3</h4>
+            <div class="flex">
+                <input id="name3" type="text" placeholder="Nhập tên"> 
+                <input id="x3" type="Number" placeholder="Nhập tọa độ x">
+                <input id="y3" type="Number" placeholder="Nhập tọa độ y">
+            </div>
+            <h4 class="py-3">Trường học</h4>
+            <div class="flex">
+                <input id="x0" type="Number" placeholder="Nhập tọa độ x">
+                <input id="y0" type="Number" placeholder="Nhập tọa độ y">
+            </div>
+        </form>
+        <button id="btnTimXaNhat" class="btn btn-success">Tìm</button>
+        <div class="py-3">
+            <span id="txtSinhVienXaNhat"></span>
+        </div>
+
+    </div>
+
+    <!-- BS5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
